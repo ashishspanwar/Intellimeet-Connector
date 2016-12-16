@@ -133,10 +133,7 @@ public class IntellimeetTranslationServiceImpl extends AbstractTranslationServic
 	public TranslationResult translateString(String sourceString, String sourceLanguage, String targetLanguage,
 			TranslationConstants.ContentType contentType, String contentCategory) throws TranslationException {
 		LOGGER.trace("IntellimeetTranslationServiceImpl.translateString");
-
-		String translatedString = getTranslatedString(sourceString,sourceLanguage,targetLanguage);
-		return new TranslationResultImpl(translatedString, sourceLanguage, targetLanguage, contentType, contentCategory,
-				sourceString, TranslationResultImpl.UNKNOWN_RATING, null);
+		return null;
 	}
 
 	@Override
@@ -188,10 +185,7 @@ public class IntellimeetTranslationServiceImpl extends AbstractTranslationServic
 			throws TranslationException {
 		LOGGER.trace("IntellimeetTranslationServiceImpl.createTranslationJob");
 
-		return CloudwordsTranslationUtil.createCloudwordsProject(projectName.replace("_translationjob", ""),
-				strSourceLanguage, strTargetLanguage, description, dueDate,
-				CloudwordsTranslationUtil.getCloudwordsClient(baseurl, apikey));
-		//return "dfgh";
+		return null;
 	}
 
 	@Override
