@@ -1,0 +1,13 @@
+.*.dir
+.vlt
+.project
+.settings/
+.classpath
+target/
+*.jar
+
+.idea/
+*.iml
+*.log
+
+*~
